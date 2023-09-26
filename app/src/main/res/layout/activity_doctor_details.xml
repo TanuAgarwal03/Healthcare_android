@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorDetailsActivity"
+    android:background="@drawable/back1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorDetail_head"
+        android:text="24*7 HEALTHCARE"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorDetail_title"
+        android:layout_below="@+id/doctorDetail_head"
+        android:text="Default Text"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:id="@+id/doctorDetails_listview"
+        android:layout_below="@id/doctorDetail_title"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/doctorDetail_button"
+        android:text="BACK"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/doctorDetails_listview"
+        android:layout_alignParentEnd="true"/>
+
+
+</RelativeLayout>
