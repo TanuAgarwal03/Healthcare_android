@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".CartBuyMedicineActivity">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyMedCart_head"
+        android:text="24*7 HEALTHCARE"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_200"
+        android:textSize="34sp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyMedCart_title"
+        android:layout_below="@+id/buyMedCart_head"
+        android:text="Deliver Location : JAIPUR"
+        android:textStyle="bold"
+        android:textColor="@color/yellowLight"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyMedCart_location"
+        android:layout_below="@+id/buyMedCart_title"
+        android:text="LAB TEST and PACKAGES"
+        android:textStyle="bold"
+        android:textColor="@color/yellowLight"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+    <ListView
+        android:id="@+id/buyMedCart_listview"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/buyMedCart_title"/>
+
+    <TextView
+        android:id="@+id/buyMedCart_totalCost"
+        android:layout_below="@+id/buyMedCart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Cost : 2000/- "
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyMedCart_date"
+        android:text="Select Deliver Date"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/buyMedCart_totalCost"
+        android:textColor="#FFF000"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buyMedCart_btnDate"
+        style="?android:spinnerStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buyMedCart_date"
+        android:text="01/10/2023"
+        android:layout_marginHorizontal="130dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buyMedCart_btnDate"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/buyMedCart_checkOutBtn"
+            android:text="CHECKOUT"
+            android:layout_marginHorizontal="50dp"
+
+            android:layout_marginTop="10dp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buyMedCart_backBtn"
+            android:layout_weight="1"
+            android:text="BACK"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/buyMedCart_btnDate" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DoctorDetailsActivity"
-    android:background="@drawable/back2">
+    tools:context=".OrderDetailsActivity"
+    android:background="@drawable/background">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/doctorDetail_head"
+        android:id="@+id/orderDetails_head"
         android:text="24*7 HEALTHCARE"
         android:layout_marginTop="25dp"
         android:textStyle="bold"
@@ -20,21 +20,30 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/doctorDetail_title"
-        android:layout_below="@+id/doctorDetail_head"
-        android:text="Default Text"
+        android:id="@+id/orderDetails_title"
+        android:layout_below="@+id/orderDetails_head"
+        android:text="ORDER DETAILS"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textAlignment="center"/>
 
     <ListView
+        android:id="@+id/orderDetails_listview"
         android:layout_width="350dp"
         android:layout_height="500dp"
-        android:id="@+id/doctorDetails_listview"
-        android:layout_below="@id/doctorDetail_title"
+        android:layout_below="@id/orderDetails_title"
         android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
         />
 
-
+    <Button
+        android:id="@+id/orderDetails_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDetails_listview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
+        android:text="BACK" />
 </RelativeLayout>

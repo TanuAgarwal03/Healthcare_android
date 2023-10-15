@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LabTestDetailsActivity"
-    android:background="@drawable/back2">
+    android:background="@drawable/back2"
+    tools:context=".BuyMedicineDetailsActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_head"
+        android:id="@+id/buyMedicineDetails_head"
         android:text="24*7 HEALTHCARE"
         android:layout_marginTop="25dp"
         android:textStyle="bold"
@@ -20,75 +20,73 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_location"
-        android:layout_below="@+id/labTestDetail_head"
+        android:id="@+id/buyMedicineDetails_location"
+        android:layout_below="@+id/buyMedicineDetails_head"
         android:text="Deliver Location : Jaipur"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="16sp"
         android:textAlignment="center"
         android:layout_marginTop="10dp"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_title"
-        android:layout_below="@+id/labTestDetail_location"
-        android:text="LAB TEST AND PACKAGES"
+        android:id="@+id/buyMedicineDetails_title"
+        android:layout_below="@+id/buyMedicineDetails_location"
+        android:text="BUY MEDICINE DETAILS"
         android:textStyle="bold"
         android:textColor="@color/yellowLight"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textAlignment="center"
         android:layout_marginTop="5dp"/>
+
     <EditText
         android:layout_width="350dp"
-        android:layout_height="370dp"
-        android:id="@+id/labTestDetail_editTextMultiLine"
-        android:layout_below="@id/labTestDetail_title"
+        android:layout_height="350dp"
+        android:id="@+id/buyMedicineDetails_editText"
+        android:layout_below="@id/buyMedicineDetails_title"
         android:layout_margin="30dp"
         android:editable="false"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:textSize="20sp"
-        android:padding="15dp"
+        android:padding="10dp"
         android:text="Hi \nHello"
         android:textColor="@color/white"
-        tools:ignore="MissingConstraints"/>
-
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_totalCost"
-        android:layout_below="@id/labTestDetail_editTextMultiLine"
-        android:layout_marginHorizontal="70dp"
-        android:textAlignment="center"
+        android:layout_below="@id/buyMedicineDetails_editText"
+        android:id="@+id/buyMedicineDetails_textView"
         android:text="TextView"
-        android:textSize="20sp"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/yellowLight"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_btnAddToCart"
-        android:layout_below="@id/labTestDetail_totalCost"
-        android:layout_marginVertical="20dp"
         android:text="ADD TO CART"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginHorizontal="100dp"
-        android:background="@color/purple_200"/>
+        android:padding="5dp"
+        android:layout_below="@id/buyMedicineDetails_textView"
+        android:id="@+id/buyMedicineDetails_CartBtn"
+        android:layout_marginHorizontal="100dp"/>
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/labTestDetail_btnBack"
-        android:layout_below="@id/labTestDetail_btnAddToCart"
         android:text="BACK"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        android:layout_marginHorizontal="150dp"
-        android:background="@color/purple_200"/>
+        android:padding="5dp"
+        android:layout_below="@id/buyMedicineDetails_CartBtn"
+        android:id="@+id/buyMedicineDetails_BackBtn"
+        android:layout_marginHorizontal="150dp"/>
+
 
 
 

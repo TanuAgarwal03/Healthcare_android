@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".cartLabActivity">
+    tools:context=".CartLabActivity">
 
     <TextView
 
@@ -54,7 +54,7 @@
         android:layout_below="@+id/labCart_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total Cost : "
+        android:text="Total Cost : 2000/- "
         android:layout_marginTop="15dp"
         android:textSize="25sp"
         android:textColor="@color/white"
@@ -76,14 +76,14 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Select Deliver Date"
                 android:textColor="#FFF000"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/buttonAppDate"
+                android:id="@+id/labCart_btnDate"
                 style="?android:spinnerStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
                 android:id="@+id/labCart_backBtn"
                 android:text="BACK"
                 android:layout_marginTop="20dp"
-                android:layout_below="@id/buttonAppDate"
+                android:layout_below="@id/labCart_btnDate"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="15dp"/>
 
@@ -109,13 +109,13 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Select Deliver Time"
                 android:textColor="#FFF000"
                 android:textSize="18sp" />
             <Button
-                android:id="@+id/buttonAppTime"
+                android:id="@+id/labCart_btnTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="?android:spinnerStyle"
@@ -128,7 +128,7 @@
                 android:text="CHECKOUT"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
-                android:layout_below="@id/buttonAppTime"
+                android:layout_below="@id/labCart_btnTime"
                 android:layout_alignParentEnd="true"/>
         </LinearLayout>
 

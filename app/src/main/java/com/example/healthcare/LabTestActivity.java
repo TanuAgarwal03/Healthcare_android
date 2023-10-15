@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 public class LabTestActivity extends AppCompatActivity {
 
-    private String[][] packages =
+    private final String[][] packages =
             {
                     {"Package 1 : Full Body CheckUp " , "" , "" , "" ,"999"},
                     {"Package 2 : Blood Glucose Fasting " , "" , "" , "" ,"299"},
@@ -24,7 +24,7 @@ public class LabTestActivity extends AppCompatActivity {
                     {"Package 5 : Immunity Check " , "" , "" , "" ,"699"},
             };
 
-    private String[] package_details = {
+    private final String[] package_details = {
             "Blood Glucose Fasting \n" +
                     "Complete Hemogram\n"+
                     "HbA1c\n"+
@@ -50,6 +50,7 @@ public class LabTestActivity extends AppCompatActivity {
     SimpleAdapter sa;
     Button btnGoToCart , btnBack;
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,7 +98,7 @@ public class LabTestActivity extends AppCompatActivity {
         btnGoToCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LabTestActivity.this , cartLabActivity.class));
+                startActivity(new Intent(LabTestActivity.this , CartLabActivity.class));
             }
         });
 
