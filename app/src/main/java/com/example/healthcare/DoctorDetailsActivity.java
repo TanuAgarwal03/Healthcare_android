@@ -95,8 +95,11 @@ public class DoctorDetailsActivity extends AppCompatActivity {
         String title = it.getStringExtra("title");
         tv.setText(title);
 
-        if(title.compareTo("Physician") == 0)
+       // btn = findViewById(R.id.cardFD1);
+
+        if(title.compareTo("Physician") == 0){
             doctor_details = doctor_details1;
+        }
         else
         if(title.compareTo("Dietician") == 0)
             doctor_details = doctor_details2;

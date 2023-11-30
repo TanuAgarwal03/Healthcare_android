@@ -25,7 +25,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
 
         tvPackageName = findViewById(R.id.buyMedicineDetails_title);
         tvTotalCost = findViewById(R.id.buyMedicineDetails_textView);
-        edDetails.setKeyListener(null);
+        //edDetails.setKeyListener(null);
         edDetails= findViewById(R.id.buyMedicineDetails_editText);
         btnBack = findViewById(R.id.buyMedicineDetails_BackBtn);
         btnCart = findViewById(R.id.buyMedicineDetails_CartBtn);

@@ -23,7 +23,6 @@ public class OrderDetailsActivity extends AppCompatActivity {
     ArrayList list;
     SimpleAdapter sa;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,15 +48,15 @@ public class OrderDetailsActivity extends AppCompatActivity {
             order_details[i] = new String[5];
             String arrData = dbData.get(i).toString();
             String[] strData = arrData.split(java.util.regex.Pattern.quote("$"));
-            order_details[i][0] = strData[0];
-            order_details[i][1] = strData[1];
-            if(strData[7].compareTo("medicine")==0){
-                order_details[i][3] = "Del:" +strData[4];
-            }else {
-                order_details[i][3] = "Del: " +strData[4] +" " + strData[5];
-            }
-            order_details[i][2] = "Rs." +strData[6];
-            order_details[i][4] = strData[7];
+//            order_details[i][0] = strData[0];
+//            order_details[i][1] = strData[1];
+//            if(strData[7].compareTo("medicine")==0){
+//                order_details[i][3] = "Del:" +strData[4];
+//            }else {
+//                order_details[i][3] = "Del: " +strData[4] +" " + strData[5];
+//            }
+//            order_details[i][2] = "Rs." +strData[6];
+//            order_details[i][4] = strData[7];
         }
         list = new ArrayList();
         for(int i = 0; i<order_details.length ; i++){
